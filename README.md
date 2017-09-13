@@ -11,3 +11,7 @@ https://lany192.github.io/json/test.json
 https://lany192.github.io/json/getUserInfo.json
 
 https://lany192.github.io/json/city.json
+
+https://lany192.github.io/json/banners.json
+
+https://lany192.github.io/json/items.json
