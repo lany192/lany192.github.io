@@ -1,10 +1,1 @@
-  {
-    "ferrari": 
-	{
-		"enable":true
-	},
-    "lamborghini": 
-	{
-		"enable":true
-	}
-  }
+{"ferrari":{"enable":false},"lamborghini":{"enable":true}}
