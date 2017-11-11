@@ -1,6 +1,6 @@
 {
-  "error_code": 0,
-  "error_message": "请求成功",
+  "status": 0,
+  "msg": "请求成功",
   "data": [
     {
       "content": "内容内容内容内容0",
