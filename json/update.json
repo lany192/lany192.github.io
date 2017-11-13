@@ -1,14 +1,12 @@
 {
-    "status": 1,
-    "msg": "success",
-    "data": {
-         {
-                "url": "http:\/\/download.1zhe.com\/upload\/app\/android\/1zhe_TeMai_2.4.3.apk",
-                "force": "1",
-                "type": "1",
-                "version": "1.2.5",
-                "updateInfo": "测试更新",
-                "important": "1"
-            }
-    }
+  "status": 1,
+  "msg": "请求成功",
+  "data": {
+    "url": "http://test.app.1zhe.com/upload/app/android/1zhe_TeMai_2.1.9-20151008-5.apk",
+    "force": "0",
+    "type": "1",
+    "version": "1.2.5",
+    "updateInfo": "测试更新",
+    "important": "1"
+  }
 }
