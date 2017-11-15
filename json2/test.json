@@ -1,0 +1,22 @@
+[
+  {
+    "pluginId": 1245,
+    "pluginName": "push",
+    "pluginUrl": "https://lany192.github.io/plugins/demo1.jar"
+  },
+  {
+    "pluginId": 1243,
+    "pluginName": "test2",
+    "pluginUrl": "https://lany192.github.io/plugins/demo2.jar"
+  },
+  {
+    "pluginId": 1246,
+    "pluginName": "push4",
+    "pluginUrl": "https://lany192.github.io/plugins/demo1.jar"
+  },
+  {
+    "pluginId": 133,
+    "pluginName": "test5",
+    "pluginUrl": "https://lany192.github.io/plugins/demo2.jar"
+  }
+]
