@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport"/>
+    <title>自定义协议与js接口测试</title>
+    <script type="text/javascript">
+        var share_json = JSON.stringify({
+            "title": "分享标题测试",
+            "link": "https://baidu.com",
+            "content": "分享描述内容测试...",
+            "image": "https://plc.jj20.com/up/allimg/911/0R415123342/150R4123342-6.jpg"
+        });
+
+        function share(json) {
+           other.share(json);
+        }
+
+        function setLoginInfo(info) {
+            var message = "登录Token：" + info.token
+                    + "\nU：" + info.u
+                    ;
+            alert(message);
+        }
+
+        function toast(content) {
+           app.toast(content);
+        }
+
+        function route(path) {
+           app.route(path);
+        }
+        function isLogin() {
+           var result = "是否登录：" +app.isLogin();
+           alert(result);
+        }
+    </script>
+</head>
+<body>
+<h4>AppLinks自定义协议测试</h4>
+<ul>
+    <li><a href="gamekipo:///app/browser?title=网页测试&url=https://baidu.com">跳转到指定网页</a></li>
+    <li><a href="gamekipo:///app/accessrecord">1.瀏覽記錄</a></li>
+    <li><a href="gamekipo:///app/browser?title=xxx&url=xxx">2.通用网页</a></li>
+    <li><a href="gamekipo:///app/category">3.分类</a></li>
+    <li><a href="gamekipo:///app/category/detail?categoryId=xxx">4.分类列表/分类详情</a></li>
+    <li><a href="gamekipo:///app/collection">5.我的收藏</a></li>
+    <li><a href="gamekipo:///app/comment/editor?gameId=xxx">6.写评论/修改评论</a></li>
+    <li><a href="gamekipo:///app/drafts">7.草稿箱</a></li>
+    <li><a href="gamekipo:///app/feedback/detail?id=xxx">8.反馈详情</a></li>
+    <li><a href="gamekipo:///app/feedback">9.我要反馈</a></li>
+    <li><a href="gamekipo:///app/feedback/record">10.反馈记录</a></li>
+    <li><a href="gamekipo:///app/game/detail?gameId=xxx&packageName=xxx">11.游戏详情</a></li>
+    <li><a href="gamekipo:///app/game/urge?gameId=xxx">12.游戏催更</a></li>
+    <li><a href="gamekipo:///app/home?gameId=xxx">13.个人主页</a></li>
+    <li><a href="gamekipo:///app/image/crop?path=xxx">14.图片裁剪</a></li>
+    <li><a href="gamekipo:///app/image/preview?images=xxx&position=xxx">15.大图浏览</a></li>
+    <li><a href="gamekipo:///app/recent">16.最近常玩</a></li>
+    <li><a href="gamekipo:///app/main">17.主界面</a></li>
+    <li><a href="gamekipo:///app/ignored">18.已忽略的更新</a></li>
+    <li><a href="gamekipo:///app/mygame?tabPosition=xxx">19.我的遊戲</a></li>
+    <li><a href="gamekipo:///app/report?type=xxx&id=xxx">20.举报</a></li>
+    <li><a href="gamekipo:///app/search">21.搜索</a></li>
+    <li><a href="gamekipo:///app/settings/account">22.账号与安全</a></li>
+    <li><a href="gamekipo:///app/settings/account/close">23.注销账号</a></li>
+    <li><a href="gamekipo:///app/settings/dark">24.深色模式選擇</a></li>
+    <li><a href="gamekipo:///app/settings/device">25.遊戲時长綁定設備管理</a></li>
+    <li><a href="gamekipo:///app/settings/download">26.下载与安装设置</a></li>
+    <li><a href="gamekipo:///app/settings/login">27.登录方式绑定</a></li>
+    <li><a href="gamekipo:///app/settings/message">28.消息设置</a></li>
+    <li><a href="gamekipo:///app/settings/permission">29.系统授权设置</a></li>
+    <li><a href="gamekipo:///app/settings/privacy">30.隐私设置</a></li>
+    <li><a href="gamekipo:///app/settings/video">31.视频播放设置</a></li>
+    <li><a href="gamekipo:///app/splash">32.</a></li>
+    <li><a href="gamekipo:///app/attention?userId=xxx">33.用户的关注</a></li>
+    <li><a href="gamekipo:///app/bind/phone">34.手機綁定</a></li>
+    <li><a href="gamekipo:///app/user/comment">35.我的评价</a></li>
+    <li><a href="gamekipo:///app/user/country">36.国家地区</a></li>
+    <li><a href="gamekipo:///app/fans?id=xxx">37.我的/TA的粉丝</a></li>
+    <li><a href="gamekipo:///app/user/popcorn">38.我的爆米花</a></li>
+    <li><a href="gamekipo:///app/user/popcorn/transfer">39.爆米花转账</a></li>
+    <li><a href="gamekipo:///app/realname">40.实名认证</a></li>
+    <li><a href="gamekipo:///app/user/info">41.编辑资料</a></li>
+    <li>
+        <a href="gamekipo:///app/game/commentdetail?gameId=xxx&id=xxx&downloadBean=xxx">42.游戏评论详情页</a>
+    </li>
+    <li><a href="gamekipo:///app/login">43.登录页</a></li>
+    <li><a href="gamekipo:///app/settings/general">44.通用设置</a></li>
+    <li><a href="gamekipo:///app/settings/language">45.语言设置</a></li>
+    <li><a href="gamekipo:///app/settings">46.设置</a></li>
+    <li><a href="gamekipo:///app/test">47.测试</a></li>
+    <li><a href="gamekipo:///app/user/nickname">48.昵称</a></li>
+    <li><a href="gamekipo:///app/user/signature">49.个性签名</a></li>
+</ul>
+<h4>JS接口测试</h4>
+<ul>
+    <li><a href="javascript:share(share_json);">2.分享</a></li>
+    <li><a href="javascript:window.app.toast('吐司测试');">3.吐司测试</a></li>
+    <li><a href="javascript:window.app.route('/app/demo?id=1');">6.测试不存在的path:/app/demo?id=1</a>
+    </li>
+    <li><a href="javascript:isLogin();">8.是否登录</a></li>
+    <li><a href="javascript:window.app.route('/app/accessrecord');">1.瀏覽記錄</a></li>
+    <li><a href="javascript:window.app.route('/app/browser?title=xxx&url=xxx');">2.通用网页</a></li>
+    <li><a href="javascript:window.app.route('/app/category');">3.分类</a></li>
+    <li>
+        <a href="javascript:window.app.route('/app/category/detail?categoryId=xxx');">4.分类列表/分类详情</a>
+    </li>
+    <li><a href="javascript:window.app.route('/app/collection');">5.我的收藏</a></li>
+    <li><a href="javascript:window.app.route('/app/comment/editor?gameId=xxx');">6.写评论/修改评论</a></li>
+    <li><a href="javascript:window.app.route('/app/drafts');">7.草稿箱</a></li>
+    <li><a href="javascript:window.app.route('/app/feedback/detail?id=xxx');">8.反馈详情</a></li>
+    <li><a href="javascript:window.app.route('/app/feedback');">9.我要反馈</a></li>
+    <li><a href="javascript:window.app.route('/app/feedback/record');">10.反馈记录</a></li>
+    <li><a href="javascript:window.app.route('/app/game/detail?gameId=xxx&packageName=xxx');">11.游戏详情</a>
+    </li>
+    <li><a href="javascript:window.app.route('/app/game/urge?gameId=xxx');">12.游戏催更</a></li>
+    <li><a href="javascript:window.app.route('/app/home?gameId=xxx');">13.个人主页</a></li>
+    <li><a href="javascript:window.app.route('/app/image/crop?path=xxx');">14.图片裁剪</a></li>
+    <li>
+        <a href="javascript:window.app.route('/app/image/preview?images=xxx&position=xxx');">15.大图浏览</a>
+    </li>
+    <li><a href="javascript:window.app.route('/app/recent');">16.最近常玩</a></li>
+    <li><a href="javascript:window.app.route('/app/main');">17.主界面</a></li>
+    <li><a href="javascript:window.app.route('/app/ignored');">18.已忽略的更新</a></li>
+    <li><a href="javascript:window.app.route('/app/mygame?tabPosition=xxx');">19.我的遊戲</a></li>
+    <li><a href="javascript:window.app.route('/app/report?type=xxx&id=xxx');">20.举报</a></li>
+    <li><a href="javascript:window.app.route('/app/search');">21.搜索</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/account');">22.账号与安全</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/account/close');">23.注销账号</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/dark');">24.深色模式選擇</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/device');">25.遊戲時长綁定設備管理</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/download');">26.下载与安装设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/login');">27.登录方式绑定</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/message');">28.消息设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/permission');">29.系统授权设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/privacy');">30.隐私设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/video');">31.视频播放设置</a></li>
+    <li><a href="javascript:window.app.route('/app/splash');">32.</a></li>
+    <li><a href="javascript:window.app.route('/app/attention?userId=xxx');">33.用户的关注</a></li>
+    <li><a href="javascript:window.app.route('/app/bind/phone');">34.手機綁定</a></li>
+    <li><a href="javascript:window.app.route('/app/user/comment');">35.我的评价</a></li>
+    <li><a href="javascript:window.app.route('/app/user/country');">36.国家地区</a></li>
+    <li><a href="javascript:window.app.route('/app/fans?id=xxx');">37.我的/TA的粉丝</a></li>
+    <li><a href="javascript:window.app.route('/app/user/popcorn');">38.我的爆米花</a></li>
+    <li><a href="javascript:window.app.route('/app/user/popcorn/transfer');">39.爆米花转账</a></li>
+    <li><a href="javascript:window.app.route('/app/realname');">40.实名认证</a></li>
+    <li><a href="javascript:window.app.route('/app/user/info');">41.编辑资料</a></li>
+    <li>
+        <a href="javascript:window.app.route('/app/game/commentdetail?gameId=xxx&id=xxx&downloadBean=xxx');">42.游戏评论详情页</a>
+    </li>
+    <li><a href="javascript:window.app.route('/app/login');">43.登录页</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/general');">44.通用设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings/language');">45.语言设置</a></li>
+    <li><a href="javascript:window.app.route('/app/settings');">46.设置</a></li>
+    <li><a href="javascript:window.app.route('/app/test');">47.测试</a></li>
+    <li><a href="javascript:window.app.route('/app/user/nickname');">48.昵称</a></li>
+    <li><a href="javascript:window.app.route('/app/user/signature');">49.个性签名</a></li>
+</ul>
+</body>
+</html>
